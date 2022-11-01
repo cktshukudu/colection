@@ -1,0 +1,57 @@
+{% extends 'navbar.html'%}
+{% load static %}
+{% block content %}
+
+<br><br>
+<body>
+        <form method="POST" action="">
+            {% csrf_token %}  
+            <div class="content">
+                <div class="form-group col-md-12 mb-10">
+            1. <label for="">Does the system response and supply planning?</label><br>
+                <label for="response_yes">Yes</label>
+                <input type="radio" id="res_yes" name="response_yes" value="response_yes"><br>
+                <label for="response_no">No</label>
+                <input type="radio" id="response_no" name="response_no" value="response_no"><br>
+                 </div>
+                 </div>
+                 <div class="template">
+                <div class="form-group col-md-12 mb-10">
+                    2. <label for="">Does the system bridges the gap between project planning and the financial planning process?</label><br>
+                    <label for="Plan_Yes">Yes</label>
+                    <input type="radio" id="plan_yes" name="plan_yes" value="plan_yes"><br>
+                    <label for="Plan_No">No</label>
+                    <input type="radio" id="plan_no" name="plan_no" value="plan_no"><br>
+                </div>
+                </div>
+                <div class="content">
+                <div class="form-group col-md-12 mb-10">
+                    3. <label for="">Does the system provides integrated driver-based planning for income statement, balance sheet, and cash?</label><br>
+                    <label for="integrated_yes">Yes</label>
+                    <input type="radio" id="integrated_yes" name="integrated_yes" value="integrated_yes"><br>
+                    <label for="integrated_no">No</label>
+                    <input type="radio" id="integrated_no" name="integrated_no" value="integrated_no">
+                </div>
+                </div>
+                <div class="template">
+                <div class="form-group col-md-12 mb-10">
+                4. <label  for="">Are you satisfied with your current planning system?</label><br>
+                <label for="current_yes">Yes</label>
+                <input type="radio" id="current_yes" name="current_yes" value="current_yes"><br>
+                <label for="current_no">No</label>
+                <input type="current_no" id="current_no" name="current_no" value="current_no">
+                </div>
+                </div>
+                <div class="content">
+                    <button class="btn btn-outline-success" type="submit"> Save </button>
+                    <button class="btn btn-outline-success" type="submit"> View </button>
+                    </div>
+                  </form>
+                  </div>
+                  </div>
+                
+    </div>
+
+
+</body>
+{% endblock content %}

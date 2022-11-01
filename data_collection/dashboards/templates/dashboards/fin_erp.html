@@ -1,0 +1,57 @@
+{% extends 'navbar.html'%}
+{% load static %}
+{% block content %}
+
+<br><br>
+<body>
+        <form method="POST" action="">
+            {% csrf_token %}  
+            <div class="content">
+                <div class="form-group col-md-12 mb-10">
+            1. <label for="">Does the system generate financial statements?</label><br>
+                <label for="inspection_yes">Yes</label>
+                <input type="radio" id="inspection_yes" name="inspection_yes" value="inspection_yes"><br>
+                <label for="inspection_no">No</label>
+                <input type="radio" id="inspection_no" name="inspection_no" value="inspection_no"><br>
+                 </div>
+                 </div>
+                 <div class="template">
+                <div class="form-group col-md-12 mb-10">
+                    2. <label for="">Does the system perform cash management and general ledger?</label><br>
+                    <label for="Preventitive_yes">Yes</label>
+                    <input type="radio" id="Preventitive_yes" name="Preventitive_yes" value="Preventitive_yes"><br>
+                    <label for="Preventitive_no">No</label>
+                    <input type="radio" id="Preventitive_no" name="Preventitive_no" value="Preventitive_nosss"><br>
+                </div>
+                </div>
+                <div class="content">
+                <div class="form-group col-md-12 mb-10">
+                    3. <label for="">Does the system perform cash flow forecasting?</label><br>
+                    <label for="repairs_yes">Yes</label>
+                    <input type="radio" id="repairs_yes" name="repairs_yes" value="repairs_yes"><br>
+                    <label for="repairs_no">No</label>
+                    <input type="radio" id="repairs_no" name="repairs_no" value="repairs_no">
+                </div>
+                </div>
+                <div class="template">
+                <div class="form-group col-md-12 mb-10">
+                4. <label  for="">Are you satisfied with your current Finance system?</label><br>
+                <label for="current_yes">Yes</label>
+                <input type="radio" id="current_yes" name="current_yes" value="current_yes"><br>
+                <label for="current_no">No</label>
+                <input type="radio" id="current_no" name="current_no" value="current_no">
+                </div>
+                </div>
+                <div class="content">
+                    <button class="btn btn-outline-success" type="submit"> Save </button>
+                    <button class="btn btn-outline-success" type="submit"> View </button>
+                    </div>
+                  </form>
+                  </div>
+                  </div>
+                
+    </div>
+
+
+</body>
+{% endblock content %}

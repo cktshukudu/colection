@@ -1,0 +1,50 @@
+.banner {
+    margin-top: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0px;
+    background-position: center center;
+  }
+  .b{
+    padding: 60px;
+
+  }
+  .banner .caption {
+    background-color: #ffba08;
+    padding: 30px;
+    max-width: 450px;
+    font-size: 22px;
+    
+  }
+  .banner .caption h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .nav a:hover {
+background-color: #FFF;
+color: black;
+}
+  .banner .caption .line-dec {
+    width: 100px;
+    height: 5px;
+    background-color: #6a040f;
+  }
+  .banner .caption p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .content{
+    background: #fafafa;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  .template{
+    background: #fff;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
